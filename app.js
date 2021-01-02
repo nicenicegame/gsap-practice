@@ -63,6 +63,10 @@ let mouseText = mouse.querySelector("span");
 function cursor(e) {
     mouse.style.top = e.pageY + "px";
     mouse.style.left = e.pageX + "px";
+
+    if (window.screenY > 0) {
+        mouse.classList.add("locked");
+    }
 }
 
 function activeCursor(e) {

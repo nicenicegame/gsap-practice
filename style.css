@@ -172,6 +172,10 @@ body {
     transform-origin: 75% 75%;
 }
 
+.cursor.locked {
+    position: fixed;
+}
+
 .cursor.nav-active {
     background: rgb(86, 124, 228);
     transform: scale(3);
